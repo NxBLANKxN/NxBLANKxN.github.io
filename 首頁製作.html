@@ -12,7 +12,8 @@
     <title>My Web</title>
 </head>
 
-<body>
+<body class="bg-dark">
+
     <nav class=" navbar navbar-expand-lg navbar-dark bg-dark font-monospace">
         <ul class="navbar-nav">
             <li><a class="nav-link" href="index.html">bootstrap練習頁面</a></li>
@@ -22,14 +23,12 @@
             <li><a id="not-found" class="nav-link" href="#">Error 404 請勿觸碰</a></li>
         </ul>
     </nav>
-
     <script>
         const a = new Audio("https://bot.kamiya.app/res/rick.mp3");
         a.volume = .5;
         document
             .getElementById("not-found")
             .addEventListener("click", () => a.paused ? a.play() : a.pause())
-
     </script>
 </body>
 

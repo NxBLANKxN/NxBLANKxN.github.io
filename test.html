@@ -9,14 +9,19 @@
 
 <body>
     <div id="customId">Original content</div>
-    <img src="https://i2.kknews.cc/PctNs9rR5Tc-C_Vd3mKLwIfCdsvfPHeSpw/0.jpg" alt="">
+    <img id="image" src="https://i2.kknews.cc/PctNs9rR5Tc-C_Vd3mKLwIfCdsvfPHeSpw/0.jpg" alt="">
     <script>
+        /*
+        setInterval(() => {
+            document.getElementById("image").style.display =
+                (document.getElementById("image").style.display)
+                    ? ""
+                    : "none";
+        },10);
+        */
         setTimeout(function () {
             document.getElementById("customId").innerHTML = "New Content"
         }, 3000);
-        setTimeout(() => {
-
-        }, 1);
     </script>
 
 </body>
