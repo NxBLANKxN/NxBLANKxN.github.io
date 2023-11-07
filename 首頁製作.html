@@ -19,11 +19,18 @@
             <li><a class="nav-link" href="#">首頁(未完成)</a></li>
             <li><a class="nav-link" href="https://www.pu.edu.tw/">靜宜大學</a></li>
             <li><a class="nav-link" href="#">課表(未完成)</a></li>
+            <li><a id="not-found" class="nav-link" href="#">Error 404 請勿觸碰</a></li>
         </ul>
-
-
     </nav>
 
+    <script>
+        const a = new Audio("https://bot.kamiya.app/res/rick.mp3");
+        a.volume = .5;
+        document
+            .getElementById("not-found")
+            .addEventListener("click", () => a.paused ? a.play() : a.pause())
+
+    </script>
 </body>
 
 </html>
