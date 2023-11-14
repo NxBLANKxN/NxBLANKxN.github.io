@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 留言板 -->
+    <div class="container">
+        <div class="header">留言板</div>
+        <form action="">
+            <div class="field">
+                <div class="field-name">名字：</div>
+                <input class="field-content" type="text" placeholder="請輸入您的姓名">
+            </div>
+            <div class="field">
+                <div class="field-name">標題：</div>
+                <input class="field-content" type="text" placeholder="請輸入您的標題">
+            </div>
+            <div class="field">
+                <div class="field-name">內容：</div>
+                <textarea class="field-content" placeholder="請輸入您的內容"></textarea>
+            </div>
+        </form>
+        <div class="actions">
+            <button id="send">送出</button>
+        </div>
+    </div>
+
+    <!-- 所有留言 -->
+    <div class="">
+        <div class="header">所有留言</div>
+        </dix>
+
+</body>
+
+<style>
+    body {
+        font-family: 微軟正黑體, sans-serif;
+    }
+
+    .header {
+        text-align: center;
+        color: darkturquoise;
+        font-size: 50px;
+    }
+
+    .container,
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    input,
+    textarea {
+        flex: 1;
+        border: none;
+        resize: vertical;
+        font-size: 14px;
+    }
+
+    .field {
+        display: flex;
+        outline: 1px solid gray;
+    }
+
+    .field-content {
+        padding: 8px;
+    }
+
+    .field-name {
+        background-color: hsl(181, 100%, 36%);
+        color: white;
+        padding: 8px;
+        font-weight: 1000;
+    }
+
+    .actions {
+        display: flex;
+        justify-content: end;
+    }
+</style>
+
+</html>
