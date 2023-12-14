@@ -14,20 +14,96 @@
 </head>
 
 <body class="bg-dark">
-    <div>
-        <nav class="navbar navbar-expand navbar-dark bg-dark font-monospace" style="justify-content: space-evenly;">
-            <ul class=" navbar-nav">
-                <li><a class="nav-link" href="https://www.pu.edu.tw/">靜宜大學</a></li>
-                <li><a class="nav-link" href="留言板.html">留言板</a></li>
-                <li><a class="nav-link" href="#">課表(未完成)</a></li>
-                <li><a id="not-found" class="nav-link" href="#">Error 404 請勿觸碰</a></li>
-            </ul>
-        </nav>
+    <div style="width: 1024px;margin: auto;">
+        <div class="navbar" style="justify-content: center;">
+            <nav class=" navbar navbar-expand  font-monospace" style="justify-content: center;">
+                <ul class="navbar-nav">
+                    <li><a class="nav-link" target="_blank" href="https://www.pu.edu.tw/">靜宜大學</a></li>
+                    <li><a class="nav-link" target="_blank" href="留言板.html">留言板</a></li>
+                    <li><a class="nav-link" href="#">課表(未完成)</a></li>
+                    <li><a id="not-found" class="nav-link" href="#">Error 404 請勿觸碰</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-    <div>
-        <span style="outline: 16px double white;">test</span>
+    <div class="flex-2">
+        <div class="flex" style="width: 1024px;">
+            <div id="osu">
+                <img id="osuimg"
+                    src="https://osu-sig.vercel.app/card?user=NxBLANKxN&mode=std&lang=en&round_avatar=true&animation=true&w=920&h=535&skills=true"
+                    alt="">
+            </div>
+        </div>
+        <div class="flex" style="width: 256px;"></div>
+        <div class="flex" style="width: 512px;">
+            <nav class="navbar">
+                <ul class="navbar-nav ">
+                    <li>
+                        <p style="color: aliceblue;font-size: 32px;">530題目解答區</p>
+                    </li>
+                    <li><a class="nav-link" href="https://github.com/NxBLANKxN/code-storage/tree/main/vjudge/CPEB0914"
+                            target="_blank">CPEB0914</a></li>
+                    <li><a class="nav-link" href="https://github.com/NxBLANKxN/code-storage/tree/main/vjudge/CPEB0921"
+                            target="_blank">CPEB0921</a></li>
+                    <li><a class="nav-link" href="https://github.com/NxBLANKxN/code-storage/tree/main/vjudge/CPEB01012"
+                            target="_blank">CPEB1012</a></li>
+                    <li><a class="nav-link" href="https://github.com/NxBLANKxN/code-storage/tree/main/vjudge/CPEB1020"
+                            target="_blank">CPEB1020</a></li>
+                    <li><a class="nav-link" href="https://github.com/NxBLANKxN/code-storage/tree/main/vjudge/CPEB1115"
+                            target="_blank">CPEB1115</a></li>
+                    <li><a class="nav-link"
+                            href="https://github.com/NxBLANKxN/code-storage/tree/main/vjudge/CPEB%20II%2011_23"
+                            target="_blank">CPEB II 11_23</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="flex" style="width: 256px;"></div>
     </div>
-
 </body>
+<script>
+    const a = new Audio("https://rick-roll-ed.github.io/Rick%20Astley%20-%20Never%20Gonna%20Give%20You%20Up%20(Video).mp3");
+    a.volume = .5;
+    document
+        .getElementById("not-found")
+        .addEventListener("click", () => a.paused ? a.play() : a.pause())
+</script>
+<style>
+    .flex {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .flex-2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-link {
+        color: white;
+    }
+
+
+
+    #osuimg {
+        width: 500px;
+        height: 350px;
+    }
+
+    #osu {
+        width: 500px;
+        height: 350px;
+        overflow: hidden;
+    }
+
+    #osu img {
+        transform: scale(0.8, 0.8);
+        transition: all 1s ease-out;
+    }
+
+    #osu img:hover {
+        transform: scale(1, 1);
+    }
+</style>
 
 </html>
